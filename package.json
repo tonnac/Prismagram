@@ -5,10 +5,15 @@
   "author": "tonnac <tonnac35@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-core": "^7.0.0-bridge",
+    "babel-loader": "^8.0.6",
+    "dotenv": "^8.2.0",
     "graphql-yoga": "^1.18.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "nodemon": "^2.0.2"
   },
   "scripts": {
