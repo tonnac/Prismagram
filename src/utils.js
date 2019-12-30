@@ -13,8 +13,6 @@ export const generateSecret = () => {
   return `${adjectives[randomNumber]} ${nouns[randomNumber]}`;
 };
 
-console.log(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
-
 const sendMail = email => {
   const options = {
     auth: {
@@ -31,7 +29,7 @@ export const sendSecretMail = (address, secret) => {
     from: "noco@prismagram.com",
     to: address,
     subject: "🔒Login Secret for Prismagram🔒",
-    html: `<h1>Hello! Your login secret it ${secret}.<br/></h1> Copy paste on the app/web to log in`,
+    html: `Hello! Your login secret is <strong>${secret}</strong>.<br/> Copy paste on the app/web to log in`,
   };
   return sendMail(email);
 };
