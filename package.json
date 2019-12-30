@@ -22,6 +22,8 @@
   },
   "scripts": {
     "dev": "nodemon --exec babel-node src/server.js",
-    "deploy": "prisma deploy"
+    "deploy": "prisma deploy",
+    "generate": "prisma generate",
+    "prisma": "yarn run deploy && yarn run generate"
   }
 }
