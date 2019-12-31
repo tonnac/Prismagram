@@ -11,3 +11,11 @@ fragment UserParts on User {
         caption
     }
 }`;
+
+export const COMMENT_FRAGMENT = `fragment CommentParts on Commit{
+    id
+    text
+    user{
+        username
+    }
+}`;
