@@ -9,7 +9,7 @@ export default {
       if (user.loginSecret === secret) {
         return generateToken(user.id);
       } else {
-        throw Error("Wring email/secret combination");
+        throw Error("Wrong email/secret combination");
       }
     },
   },
