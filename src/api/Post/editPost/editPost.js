@@ -17,7 +17,7 @@ export default {
             where: { id },
           });
         } else if (action === DELETE) {
-          return prisma.deletePost(id);
+          return prisma.deletePost({ id });
         }
       } else {
         throw Error("You can't do that");
